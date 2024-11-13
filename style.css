@@ -32,6 +32,16 @@ body {
   overflow: hidden;
 }
 
+
+.header-title {
+  display: inline-block;
+  vertical-align: middle;
+  color: #db292f;
+  margin-left: 10px;
+  font-size: 2em;
+  line-height: 50px;
+}
+
 .logo-container {
   float: left;
   display: inline-block;
@@ -49,14 +59,6 @@ body {
 }
 
 
-.header-title {
-  display: inline-block;
-  vertical-align: middle;
-  color: #db292f;
-  margin-left: 10px;
-  font-size: 2em;
-  line-height: 50px;
-}
 
 .mode {
   float: right;
@@ -159,7 +161,7 @@ td {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.container img {
+.index-section .container img {
   width: 300px;
   height: 450px;
   object-fit: contain;
@@ -167,15 +169,32 @@ td {
   margin-bottom: 7.25px;
   margin-top: 7.25px;
   display: inline-block;
-  filter: drop-shadow(4px 10px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(4px 10px rgba(0, 0, 0, 0.6));
 }
 
-.container img:hover {
+.index-section img:hover {
   clip-path: inset(0);
   transform: scale(1.25);
-  filter: brightness(1);
   filter: drop-shadow(4px 10px rgba(0, 0, 0, 0.4));
 }
+
+body.light-mode .index-section .container img {
+  width: 300px;
+  height: 450px;
+  object-fit: contain;
+  transition: transform 0.8s ease-in-out, clip-path 0.8s ease-in-out;
+  margin-bottom: 7.25px;
+  margin-top: 7.25px;
+  display: inline-block;
+  filter: drop-shadow(4px 10px rgba(0, 0, 0, 0.6));
+}
+
+body.light-mode .index-section img:hover {
+  clip-path: inset(0);
+  transform: scale(1.25);
+  filter: drop-shadow(4px 10px rgba(0, 0, 0, 0.4));
+}
+
 
 .footer {
   text-align: center;
@@ -193,10 +212,9 @@ td {
   background-color: #db292f; /* Color por defecto en modo oscuro */
   padding: 40px;
   margin: 10px auto;
-  margin-top: 10px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
-  width: 90%;
+  width: 60%;
   text-align: center;
 }
 
@@ -334,6 +352,10 @@ body.light-mode form label {
   margin-bottom: 10px;
 }
 
+body.light-mode a {
+  color: #d4ba83;
+}
+
 /* Establecer color de fondo de los formularios en modo claro */
 body.light-mode #login-container,
 body.light-mode #register-container {
@@ -378,6 +400,10 @@ body.light-mode #mode-icon {
 /* Colores del SVG del usuario en modo claro */
 body.light-mode #user-icon svg {
   stroke: #d4ba83;
+}
+
+body.light-mode a{
+  color: #d4ba83;
 }
 
 /* Cambio de logo y cursor en modo claro */

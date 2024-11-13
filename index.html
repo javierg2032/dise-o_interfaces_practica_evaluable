@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
+  <body class="light-mode">
     <header class="header">
       <div class="logo-container">
-                <a href="index.html">
+        <a href="index.html">
           <img src="Imagenes/D20.svg" alt="Logo" class="logo" />
         </a>
         <h1 class="header-title">Gremio D20</h1>
@@ -60,48 +60,33 @@
 
     <section class="index-section">
       <div class="container">
-        <a href="Bárbaro.html">
-          <img src="Imagenes/Bárbaro.svg" alt="Bárbaro" />
-        </a>
-        <a href="Bardo.html">
-          <img src="Imagenes/Bardo.svg" alt="Bardo" />
-        </a>
-        <a href="Brujo.html">
-          <img src="Imagenes/Brujo.svg" alt="Brujo" />
-        </a>
-        <a href="Clérigo.html">
-          <img src="Imagenes/Clérigo.svg" alt="Clérigo" />
-        </a>
+        <img src="Imagenes/Bárbaro.svg" alt="Bárbaro" />
+
+        <img src="Imagenes/Bardo.svg" alt="Bardo" />
+
+        <img src="Imagenes/Brujo.svg" alt="Brujo" />
+
+        <img src="Imagenes/Clérigo.svg" alt="Clérigo" />
       </div>
 
       <div class="container">
-        <a href="Druida.html">
-          <img src="Imagenes/Druida.svg" alt="Druida" />
-        </a>
-        <a href="Explorador.html">
-          <img src="Imagenes/Explorador.svg" alt="Explorador" />
-        </a>
-        <a href="Guerrero.html">
-          <img src="Imagenes/Guerrero.svg" alt="Guerrero" />
-        </a>
-        <a href="Hechicero.html">
-          <img src="Imagenes/Hechicero.svg" alt="Hechicero" />
-        </a>
+        <img src="Imagenes/Druida.svg" alt="Druida" />
+
+        <img src="Imagenes/Explorador.svg" alt="Explorador" />
+
+        <img src="Imagenes/Guerrero.svg" alt="Guerrero" />
+
+        <img src="Imagenes/Hechicero.svg" alt="Hechicero" />
       </div>
 
       <div class="container">
-        <a href="Mago.html">
-          <img src="Imagenes/Mago.svg" alt="Mago" />
-        </a>
-        <a href="Monje.html">
-          <img src="Imagenes/Monje.svg" alt="Monje" />
-        </a>
-        <a href="Paladín.html">
-          <img src="Imagenes/Paladín.svg" alt="Paladín" />
-        </a>
-        <a href="Pícaro.html">
-          <img src="Imagenes/Pícaro.svg" alt="Pícaro" />
-        </a>
+        <img src="Imagenes/Mago.svg" alt="Mago" />
+
+        <img src="Imagenes/Monje.svg" alt="Monje" />
+
+        <img src="Imagenes/Paladín.svg" alt="Paladín" />
+
+        <img src="Imagenes/Pícaro.svg" alt="Pícaro" />
       </div>
     </section>
     <footer class="footer">
@@ -111,20 +96,22 @@
     </footer>
 
     <script>
-      document.querySelector(".mode").addEventListener("click", () => {
-        const body = document.body;
-        const modeIcon = document.getElementById("mode-icon");
-        const userIcon = document.getElementById("user-icon");
+      // Agregar el modo claro al cargar la página
+      const body = document.body;
+      const modeIcon = document.getElementById("mode-icon");
+      const userIcon = document.getElementById("user-icon");
+      body.classList.add("light-mode");
+      modeIcon.innerHTML = ` <circle cx="12" cy="12" r="5" /> <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" /> `;
+      userIcon.querySelector("svg").setAttribute("stroke", "#D4BA83");
 
-        // Cambiar entre modo claro y oscuro
+      // Alternar entre modos al hacer clic en el icono
+      document.querySelector(".mode").addEventListener("click", () => {
         body.classList.toggle("light-mode");
 
-        // Cambiar el SVG cuando se cambia al modo claro
         if (body.classList.contains("light-mode")) {
           modeIcon.innerHTML = ` <circle cx="12" cy="12" r="5" /> <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" /> `;
           userIcon.querySelector("svg").setAttribute("stroke", "#D4BA83");
         } else {
-          // Cambiar al SVG original en modo oscuro
           modeIcon.innerHTML = ` <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path> `;
           userIcon.querySelector("svg").setAttribute("stroke", "#DB292F");
         }
