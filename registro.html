@@ -86,19 +86,39 @@
     </footer>
 
     <script>
+      const body = document.body;
+      const modeIcon = document.getElementById("mode-icon");
       document.querySelector(".mode").addEventListener("click", () => {
-        const body = document.body;
-        const modeIcon = document.getElementById("mode-icon");
+        // Cambiar entre modo claro y oscuro
+        //body.classList.toggle("light-mode");
 
         // Cambiar entre modo claro y oscuro
         body.classList.toggle("light-mode");
+        console.log(
+          "En registro esto es el theme: " + localStorage.getItem("theme")
+        );
 
         // Cambiar el SVG cuando se cambia al modo claro
         if (body.classList.contains("light-mode")) {
           modeIcon.innerHTML = ` <circle cx="12" cy="12" r="5" /> <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" /> `;
+          localStorage.setItem("theme", "light");
         } else {
           // Cambiar al SVG original en modo oscuro
           modeIcon.innerHTML = ` <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path> `;
+          localStorage.setItem("theme", "dark");
+        }
+      });
+
+      // Aplicar el tema al cargar la página
+      window.addEventListener("load", () => {
+        console.log(
+          "En registro esto es el theme: " + localStorage.getItem("theme")
+        );
+        const theme = localStorage.getItem("theme");
+        if (theme === "dark") {
+          body.classList.toggle("light-mode"); // Si el usuario eligió modo claro
+        } else {
+          //body.classList.remove("light-mode");  // Si el usuario eligió modo oscuro
         }
       });
     </script>
