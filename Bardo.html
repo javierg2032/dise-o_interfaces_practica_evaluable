@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Javier Galán" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="D&D, DND, Dungeons and Dragons, Rol" />
+    <title>Bardo</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="light-mode">
+    <header class="header">
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="Imagenes/D20.svg" alt="Logo" class="logo" />
+        </a>
+        <h1 class="header-title">Gremio D20</h1>
+      </div>
+      <div class="user" id="user-toggle">
+        <a href="login.html">
+          <span class="material-symbols-outlined" id="user-icon"
+            >account_circle</span
+          >
+        </a>
+      </div>
+
+      <div class="mode" id="mode-toggle">
+        <span class="material-symbols-outlined" id="mode-icon">light_mode</span>
+      </div>
+    </header>
+
+    <section class="class-section">
+      <div>
+        <div class="logo-container">
+          <img
+            src="Imagenes/LogoBardoOscuro.png"
+            alt="Logo del Bardo"
+            class="logoclase"
+            id="bardo"
+          />
+          <h2>Bardo</h2>
+        </div>
+        <p>
+          Los bardos, que invocan la magia a través de la música, la danza y el
+          verso, son expertos en inspirar a otros, aliviar heridas, descorazonar
+          a los enemigos y crear ilusiones. Creen que el multiverso se creó
+          mediante la palabra y que los restos de sus Palabras de Creación aún
+          resuenan y brillan en todos los planos de existencia. La magia bárdica
+          intenta aprovechar esas palabras, que trascienden cualquier idioma.
+        </p>
+        <p>
+          Cualquier cosa puede inspirar una nueva canción o cuento, por lo que
+          los bardos están fascinados por casi todo. Se convierten en maestros
+          de muchas cosas, como interpretar música, hacer magia y hacer bromas.
+        </p>
+        <p>
+          La vida de un bardo se pasa viajando, recopilando conocimientos,
+          contando historias y viviendo de la gratitud del público, como
+          cualquier otro artista. Pero la profundidad de su conocimiento y su
+          dominio de la magia los distinguen.
+        </p>
+        <table>
+          <section>Rasgos básicos del bardo</section>
+          <tr>
+            <td id="filaBardo">
+              <b>Habilidad primaria</b>
+            </td>
+            <td id="filaBardo">Carisma</td>
+          </tr>
+          <tr>
+            <td id="filaGeneral">
+              <b>Dado de puntos de vida</b>
+            </td>
+            <td id="filaGeneral">D8 por nivel de Bardo</td>
+          </tr>
+          <tr>
+            <td id="filaBardo">
+              <b>Pericias en tiradas de salvación</b>
+            </td>
+            <td id="filaBardo">Destreza y Carisma</td>
+          </tr>
+          <tr>
+            <td id="filaGeneral">
+              <b>Competencias de habilidades</b>
+            </td>
+            <td id="filaGeneral">Elige 3 habilidades</td>
+          </tr>
+          <tr>
+            <td id="filaBardo">
+              <b>Competencias en armas</b>
+            </td>
+            <td id="filaBardo">Armas simples</td>
+          </tr>
+          <tr>
+            <td id="filaGeneral">
+              <b>Competencias en herramientas</b>
+            </td>
+            <td id="filaGeneral">Elige 3 instrumentos musicales</td>
+          </tr>
+          <tr>
+            <td id="filaBardo">
+              <b>Entrenamiento con armadura</b>
+            </td>
+            <td id="filaBardo">Armadura ligera</td>
+          </tr>
+          <tr>
+            <td id="filaGeneral">
+              <b>Equipo de arranque</b>
+            </td>
+            <td id="filaGeneral">
+              Elige 'A' o 'B': (A) 'Armadura de cuero', '2 dagas', 'Instrumento
+              musical de tu elección', 'Paquete de artista' y 19 GP; o (B) 50 GP
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <img
+          src="Imagenes/Bardo.svg"
+          alt="Imagen del Bardo"
+          class="imagenClase"
+        />
+      </div>
+    </section>
+    <script>
+      window.addEventListener("load", () => {
+        // Obtener el cuerpo y el icono del modo
+        const body = document.body;
+        const modeIcon = document.getElementById("mode-icon");
+
+        // Verificar el tema guardado en localStorage
+        const theme = localStorage.getItem("theme");
+        if (theme === "dark") {
+          body.classList.remove("light-mode"); // Eliminar modo claro
+          modeIcon.textContent = "dark_mode"; // Cambiar icono a modo oscuro
+        } else {
+          body.classList.add("light-mode"); // Asegurar modo claro
+          modeIcon.textContent = "light_mode"; // Icono de modo claro
+        }
+
+        // Alternar entre modos al hacer clic en el icono
+        document.querySelector(".mode").addEventListener("click", () => {
+          body.classList.toggle("light-mode"); // Alternar la clase de modo claro
+
+          // Cambiar el icono y el tema en localStorage
+          if (body.classList.contains("light-mode")) {
+            modeIcon.textContent = "light_mode"; // Modo claro
+            localStorage.setItem("theme", "light"); // Guardar tema claro
+          } else {
+            modeIcon.textContent = "dark_mode"; // Modo oscuro
+            localStorage.setItem("theme", "dark"); // Guardar tema oscuro
+          }
+          console.log("El tema actual es: " + localStorage.getItem("theme"));
+        });
+      });
+    </script>
+  </body>
+</html>

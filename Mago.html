@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Javier Galán" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="D&D, DND, Dungeons and Dragons, Rol" />
+    <title>Mago</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="light-mode">
+  <header class="header">
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="Imagenes/D20.svg" alt="Logo" class="logo" />
+      </a>
+      <h1 class="header-title">Gremio D20</h1>
+    </div>
+    <div class="user" id="user-toggle">
+      <a href="login.html">
+        <span class="material-symbols-outlined" id="user-icon"
+          >account_circle</span
+        >
+      </a>
+    </div>
+
+    <div class="mode" id="mode-toggle">
+      <span class="material-symbols-outlined" id="mode-icon">light_mode</span>
+    </div>
+  </header>
+
+    <section class="class-section">
+      <div>
+        <div class="logo-container">
+          <img
+            src="Imagenes/LogoMagoOscuro.png"
+            alt="Logo del Mago"
+            class="logoclase"
+            id="mago"
+          />
+          <h2>Mago</h2>
+        </div>
+        <p>
+          Los magos se definen por su estudio exhaustivo de los mecanismos
+          internos de la magia. Lanzan hechizos de fuego explosivo, rayos en
+          arco, engaños sutiles y transformaciones espectaculares. Su magia
+          conjura monstruos de otros planos de existencia, vislumbra el futuro o
+          forma barreras protectoras. Sus hechizos más poderosos transforman una
+          sustancia en otra, invocan meteoritos del cielo o abren portales a
+          otros mundos.
+        </p>
+        <p>
+          La mayoría de los magos comparten un enfoque académico de la magia.
+          Examinan los fundamentos teóricos de la magia, en particular la
+          categorización de los hechizos en escuelas de magia. Magos de renombre
+          como Bigby, Tasha, Mordenkainen y Yolande han aprovechado sus estudios
+          para inventar hechizos icónicos que ahora se utilizan en todo el
+          multiverso.
+        </p>
+        <p>
+          Lo más cercano que un mago puede llegar a una vida normal es trabajar
+          como sabio o profesor. Otros magos venden sus servicios como
+          consejeros, sirven en fuerzas militares o llevan una vida delictiva o
+          dominadora.
+        </p>
+        <p>
+          Pero el atractivo del conocimiento hace que incluso los magos menos
+          aventureros abandonen la seguridad de sus bibliotecas y laboratorios
+          para adentrarse en ruinas y ciudades perdidas. La mayoría de los magos
+          creen que sus homólogos de las civilizaciones antiguas conocían
+          secretos de magia que se han perdido a lo largo de los siglos y que
+          descubrirlos podría abrir el camino hacia un poder mayor que cualquier
+          magia disponible en la era actual.
+        </p>
+        <table>
+          <tr>
+            <td id="filaMago">
+              <b>Habilidad primaria</b>
+            </td>
+            <td id="filaMago">Inteligencia</td>
+          </tr>
+          <tr>
+            <td id="filaGeneral">
+              <b>Dado de puntos de vida</b>
+            </td>
+            <td id="filaGeneral">D6 por nivel de Mago</td>
+          </tr>
+          <tr>
+            <td id="filaMago">
+              <b>Pericias en tiradas de salvación</b>
+            </td>
+            <td id="filaMago">Inteligencia y Sabiduría</td>
+          </tr>
+          <tr>
+            <td id="filaGeneral">
+              <b>Competencias de habilidades</b>
+            </td>
+            <td id="filaGeneral">
+              Elige 2: 'Arcanos', 'Historia', 'Perspicacia', 'Investigación',
+              'Medicina', 'Naturaleza' o 'Religión'
+            </td>
+          </tr>
+          <tr>
+            <td id="filaMago">
+              <b>Competencias en armas</b>
+            </td>
+            <td id="filaMago">Armas simples</td>
+          </tr>
+          <tr>
+            <td id="filaGeneral">
+              <b>Entrenamiento con armadura</b>
+            </td>
+            <td id="filaGeneral">Ninguno</td>
+          </tr>
+          <tr>
+            <td id="filaMago">
+              <b>Equipo de arranque</b>
+            </td>
+            <td id="filaMago">
+              Elige 'A' o 'B': (A) '2 dagas', 'Foco arcano (bastón)', 'Túnica',
+              'Libro de hechizos', 'Paquete de erudito' y 5 GP; o (B) 55 GP
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <img
+          src="Imagenes/Mago.svg"
+          alt="Imagen del Mago"
+          class="imagenClase"
+        />
+      </div>
+    </section>
+    <script>
+      window.addEventListener("load", () => {
+        // Obtener el cuerpo y el icono del modo
+        const body = document.body;
+        const modeIcon = document.getElementById("mode-icon");
+
+        // Verificar el tema guardado en localStorage
+        const theme = localStorage.getItem("theme");
+        if (theme === "dark") {
+          body.classList.remove("light-mode"); // Eliminar modo claro
+          modeIcon.textContent = "dark_mode"; // Cambiar icono a modo oscuro
+        } else {
+          body.classList.add("light-mode"); // Asegurar modo claro
+          modeIcon.textContent = "light_mode"; // Icono de modo claro
+        }
+
+        // Alternar entre modos al hacer clic en el icono
+        document.querySelector(".mode").addEventListener("click", () => {
+          body.classList.toggle("light-mode"); // Alternar la clase de modo claro
+
+          // Cambiar el icono y el tema en localStorage
+          if (body.classList.contains("light-mode")) {
+            modeIcon.textContent = "light_mode"; // Modo claro
+            localStorage.setItem("theme", "light"); // Guardar tema claro
+          } else {
+            modeIcon.textContent = "dark_mode"; // Modo oscuro
+            localStorage.setItem("theme", "dark"); // Guardar tema oscuro
+          }
+          console.log("El tema actual es: " + localStorage.getItem("theme"));
+        });
+      });
+    </script>
+  </body>
+</html>
