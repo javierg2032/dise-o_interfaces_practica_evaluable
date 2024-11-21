@@ -43,9 +43,11 @@
       <div class="container">
         <a href="Bárbaro.html">
           <img src="Imagenes/Bárbaro.svg" alt="Bárbaro" />
+          <audio src="Audios/Bárbaro.mp3" id="audioBarbaro"></audio>
         </a>
         <a href="Bardo.html">
           <img src="Imagenes/Bardo.svg" alt="Bardo" />
+          <audio src="Audios/Bardo.mp3" id="audioBardo"></audio>
         </a>
         <a href="Brujo.html">
           <img src="Imagenes/Brujo.svg" alt="Brujo" />
@@ -68,10 +70,8 @@
       </div>
 
       <div class="container">
-        <a href="Mago.html">
-          <img src="Imagenes/Mago.svg" alt="Mago" /> </a
-        ><a href="Monje.html">
-          <img src="Imagenes/Monje.svg" alt="Monje" /> </a
+        <a href="Mago.html"> <img src="Imagenes/Mago.svg" alt="Mago" /> </a
+        ><a href="Monje.html"> <img src="Imagenes/Monje.svg" alt="Monje" /> </a
         ><a href="Paladín.html">
           <img src="Imagenes/Paladín.svg" alt="Paladín" /> </a
         ><a href="Pícaro.html">
@@ -116,6 +116,22 @@
           console.log("El tema actual es: " + localStorage.getItem("theme"));
         });
       });
+
+      //sonido hover
+      var audio = document.getElementById("audio");
+      var img = document.getElementById("img");
+
+      function play() {
+        audio.play();
+      }
+
+      function stop() {
+        audio.pause();
+      }
+
+      img.addEventListener("click", play);
+      img.addEventListener("mouseover", play);
+      img.addEventListener("mouseout", stop);
     </script>
   </body>
 </html>
