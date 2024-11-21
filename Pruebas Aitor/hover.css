@@ -1,0 +1,63 @@
+body {
+    margin: 10%;
+}
+
+a{
+    width: min-content;
+    height: min-content;
+    text-decoration: none;
+}
+
+.card-container{
+    display: grid;
+    justify-content: center;
+    align-items: end;
+    background-image: url("../Imagenes/Bárbaro.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: transform 0.8s ease-in-out, clip-path 0.8s ease-in-out;
+    width: 350px;
+    height: 450px;
+    filter: drop-shadow(4px 10px rgba(0, 0, 0, 0.6));
+    padding-bottom: 50px;
+    border-radius: 50px;
+}
+
+.card-container:hover {
+    clip-path: inset(0);
+    transform: scale(1.25);
+    filter: drop-shadow(4px 10px rgba(0, 0, 0, 0.4));
+}
+
+.card-text {
+    background-color: #2f2d2951;
+    border-radius: 50px;
+    padding-right: 5%;
+    opacity: 0;
+    white-space: nowrap;
+    transition: opacity 1s ease;
+}
+
+.card-text img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+  
+.card-text h2 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.card-container:hover > .card-text {
+    opacity: 1;
+}
+
+.logo-clase {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.75));
+}
