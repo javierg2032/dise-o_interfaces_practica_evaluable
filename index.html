@@ -42,40 +42,82 @@
     <section class="index-section">
       <div class="container">
         <a href="Bárbaro.html">
-          <img src="Imagenes/Bárbaro.svg" alt="Bárbaro" />
-          <audio src="Audios/Bárbaro.mp3" id="audioBarbaro"></audio>
+          <div class="card-container">
+            <img src="Imagenes/Bárbaro.svg" alt="Bárbaro">
+            <h2 class="hover-text">Bárbaro</h2>
+          </div>
         </a>
         <a href="Bardo.html">
-          <img src="Imagenes/Bardo.svg" alt="Bardo" />
-          <audio src="Audios/Bardo.mp3" id="audioBardo"></audio>
+          <div class="card-container">
+            <img src="Imagenes/Bardo.svg" alt="Bardo"/>
+            <h2 class="hover-text">Bardo</h2>
+          </div>
         </a>
         <a href="Brujo.html">
-          <img src="Imagenes/Brujo.svg" alt="Brujo" />
+          <div class="card-container">
+            <img src="Imagenes/Brujo.svg" alt="Brujo" />
+            <h2 class="hover-text">Brujo</h2>
+          </div>
         </a>
         <a href="Clérigo.html">
-          <img src="Imagenes/Clérigo.svg" alt="Clérigo" />
+          <div class="card-container">
+            <img src="Imagenes/Clérigo.svg" alt="Clérigo" />
+            <h2 class="hover-text">Clérigo</h2>
+          </div>
         </a>
       </div>
 
       <div class="container">
         <a href="Druida.html">
-          <img src="Imagenes/Druida.svg" alt="Druida" /> </a
-        ><a href="Explorador.html">
-          <img src="Imagenes/Explorador.svg" alt="Explorador" /> </a
-        ><a href="Guerrero.html">
-          <img src="Imagenes/Guerrero.svg" alt="Guerrero" /> </a
-        ><a href="Hechicero.html">
-          <img src="Imagenes/Hechicero.svg" alt="Hechicero" />
+          <div class="card-container">
+            <img src="Imagenes/Druida.svg" alt="Druida"/>
+            <h2 class="hover-text">Druida</h2>
+          </div>
+        </a>
+        <a href="Explorador.html">
+          <div class="card-container">
+            <img src="Imagenes/Explorador.svg" alt="Explorador"/>
+            <h2 class="hover-text">Explorador</h2>
+          </div>
+        </a>
+        <a href="Guerrero.html">
+          <div class="card-container">
+            <img src="Imagenes/Guerrero.svg" alt="Guerrero"/>
+            <h2 class="hover-text">Guerrero</h2>
+          </div>
+        </a>
+        <a href="Hechicero.html">
+          <div class="card-container">
+            <img src="Imagenes/Hechicero.svg" alt="Hechicero"/>
+            <h2 class="hover-text">Hechicero</h2>
+          </div>
         </a>
       </div>
 
       <div class="container">
-        <a href="Mago.html"> <img src="Imagenes/Mago.svg" alt="Mago" /> </a
-        ><a href="Monje.html"> <img src="Imagenes/Monje.svg" alt="Monje" /> </a
-        ><a href="Paladín.html">
-          <img src="Imagenes/Paladín.svg" alt="Paladín" /> </a
-        ><a href="Pícaro.html">
-          <img src="Imagenes/Pícaro.svg" alt="Pícaro" />
+        <a href="Mago.html">
+          <div class="card-container">
+            <img src="Imagenes/Mago.svg" alt="Mago"/>
+            <h2 class="hover-text">Mago</h2>
+          </div>
+        </a>
+        <a href="Monje.html">
+          <div class="card-container">
+            <img src="Imagenes/Monje.svg" alt="Monje"/> 
+            <h2 class="hover-text">Monje</h2>
+          </div>
+        </a>
+        <a href="Paladín.html">
+          <div class="card-container">
+            <img src="Imagenes/Paladín.svg" alt="Paladín"/>
+            <h2 class="hover-text">Paladín</h2>
+          </div>
+        </a>
+        <a href="Pícaro.html">
+          <div class="card-container">
+            <img src="Imagenes/Pícaro.svg" alt="Pícaro"/>
+            <h2 class="hover-text">Pícaro</h2>
+          </div>
         </a>
       </div>
     </section>
@@ -116,22 +158,6 @@
           console.log("El tema actual es: " + localStorage.getItem("theme"));
         });
       });
-
-      //sonido hover
-      var audio = document.getElementById("audio");
-      var img = document.getElementById("img");
-
-      function play() {
-        audio.play();
-      }
-
-      function stop() {
-        audio.pause();
-      }
-
-      img.addEventListener("click", play);
-      img.addEventListener("mouseover", play);
-      img.addEventListener("mouseout", stop);
     </script>
   </body>
 </html>

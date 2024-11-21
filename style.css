@@ -10,7 +10,7 @@ body {
   background-color: #1f1f1f;
   cursor: url("./Imagenes/D20Mouse.svg"), auto;
   font-family: "Jacques Francois", serif;
-  font-size: large;
+  font-size: larger;
   text-align: center;
 }
 
@@ -42,11 +42,9 @@ body {
 }
 
 .logo-container {
-  float: left;
-  display: inline-block;
+  float: inline-start;
   vertical-align: middle;
 }
-
 .logo-container a {
   text-decoration: none;
 }
@@ -102,13 +100,6 @@ h3 {
   filter: brightness(0.3);
 }
 
-h4 {
-  font-family: "Jacques Francois", serif;
-  font-size: 1.25em;
-  margin: 0;
-  color: #e54341;
-}
-
 .class-logo-container {
   white-space: nowrap;
 }
@@ -129,12 +120,12 @@ a {
 }
 
 p {
-
+  font-size: larger;
   color: #1f1f1f;
 }
 
 body.light-mode p {
-
+  font-size: larger;
   color: #ffffff;
 }
 
@@ -160,20 +151,12 @@ body.light-mode h3 {
   filter: brightness(0.6);
 }
 
-body.light-mode h4 {
-  font-family: "Jacques Francois", serif;
-  font-size: 1.25em;
-  margin: 0;
-  color: #ffffff;
-
-}
-
 body.light-mode a {
   color: #e54341;
 }
 
 body.light-mode p {
-
+  font-size: larger;
   color: #ffffff;
 }
 
@@ -192,9 +175,7 @@ table {
 }
 
 .rasgosBasicos {
-
-
-  display: inline-block;
+  float: left;
 }
 
 th,
@@ -207,7 +188,7 @@ ul li {
 }
 
 ul li::marker {
-  color: #e54341;
+  color: #420c0e;
 }
 
 body.light-mode ul li {
@@ -215,7 +196,7 @@ body.light-mode ul li {
 }
 
 body.light-mode ul li::marker {
-  color: #ffffff;
+  color: #7d6e4d;
 }
 
 .index-section {
@@ -240,7 +221,7 @@ body.light-mode ul li::marker {
   text-align: left;
 }
 
-.class-section>* {
+.class-section > * {
   float: left;
   clear: both;
 }
@@ -300,7 +281,6 @@ td {
   border-color: #131313;
   color: #fafafa;
 }
-
 #filaGuerrero {
   background-color: #d68944;
   border-color: #b56a1a;
@@ -342,73 +322,61 @@ body.light-mode #filaBarbaro {
   border-color: #d35c43;
   color: #1f1f1f;
 }
-
 body.light-mode #filaBardo {
   background-color: #e5a9e8;
   border-color: #c484c7;
   color: #1f1f1f;
 }
-
 body.light-mode #filaBrujo {
   background-color: #fe84f1;
   border-color: #e87bdc;
   color: #1f1f1f;
 }
-
 body.light-mode #filaClerigo {
   background-color: #9ebedf;
   border-color: #699acd;
   color: #1f1f1f;
 }
-
 body.light-mode #filaDruida {
   background-color: #bddb63;
   border-color: #a3ca30;
   color: #1f1f1f;
 }
-
 body.light-mode #filaExplorador {
   background-color: #84da71;
   border-color: #58ad45;
   color: #1f1f1f;
 }
-
 body.light-mode #filaGeneral {
   background-color: #fafafa;
   border-color: #c5c5c5;
   color: #1f1f1f;
 }
-
 body.light-mode #filaGuerrero {
   background-color: #f4a058;
   border-color: #cf7221;
   color: #1f1f1f;
 }
-
 body.light-mode #filaHechicero {
   background-color: #e1a16d;
   border-color: #b46322;
   color: #1f1f1f;
 }
-
 body.light-mode #filaMago {
   background-color: #77b2e3;
   border-color: #287fc7;
   color: #1f1f1f;
 }
-
 body.light-mode #filaMonje {
   background-color: #4f91b5;
   border-color: #325f78;
   color: #1f1f1f;
 }
-
 body.light-mode #filaPaladin {
   background-color: #f0c97b;
   border-color: #cb9747;
   color: #1f1f1f;
 }
-
 body.light-mode #filaPicaro {
   background-color: #8d9fac;
   border-color: #606a73;
@@ -419,7 +387,7 @@ body.light-mode #filaPicaro {
   text-align: center;
   width: 100%;
   max-width: 1600px;
-  margin: 10px auto;
+  margin: 10px auto;  
   display: inline-block;
 }
 
@@ -430,8 +398,33 @@ body.light-mode #filaPicaro {
   vertical-align: top;
 }
 
+.container a {
+    display: inline-block;
+    height: max-content;
+    width: max-content;
+}
+
+.card-container {
+  display: relative;
+  width: min-content;
+}
+
+.hover-text{
+  position: absolute;
+  transform: translate(35%, -200%);
+  margin: auto;
+  opacity: 0;
+  transition: ease 2s;
+}
+
+.index-section img:hover + .hover-text {
+  opacity: 1;
+  transform: translate(35%, -100%);
+}
+
 .historia {
   width: 55%;
+  font-size: larger;
   display: inline-block;
 }
 
@@ -444,12 +437,6 @@ body.light-mode #filaPicaro {
   clear: none;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 1));
 }
-
-.imagenClase img {
-  width:85%;
-  height: auto;
-}
-
 
 
 .index-section .container img {
@@ -499,8 +486,7 @@ body.light-mode .index-section img:hover {
 /* Estilos para los formularios */
 #login-container,
 #register-container {
-  background-color: #e54341;
-  /* Color por defecto en modo oscuro */
+  background-color: #e54341; /* Color por defecto en modo oscuro */
   padding: 40px;
   margin: 10px auto;
   border-radius: 10px;
@@ -556,7 +542,7 @@ form button:hover {
   color: #e54341;
 }
 
-.mode>#mode-icon {
+.mode > #mode-icon {
   font-variation-settings: "FILL" 0, "wght" 250, "GRAD" 200, "opsz" 24;
   width: auto;
   height: auto;
@@ -638,14 +624,12 @@ body.light-mode form a:hover {
 }
 
 body.light-mode .index-section {
-  background-color: #d4ba83;
-  /* Color de fondo en modo claro para la sección del index */
+  background-color: #d4ba83; /* Color de fondo en modo claro para la sección del index */
   color: #1f1f1f;
 }
 
 body.light-mode .class-section {
-  background-color: #d4ba83;
-  /* Color de fondo en modo claro para la sección del index */
+  background-color: #d4ba83; /* Color de fondo en modo claro para la sección del index */
   color: #1f1f1f;
 }
 
@@ -669,8 +653,7 @@ body.light-mode a {
 /* Establecer color de fondo de los formularios en modo claro */
 body.light-mode #login-container,
 body.light-mode #register-container {
-  background-color: #d4ba83;
-  /* Color de fondo en modo claro */
+  background-color: #d4ba83; /* Color de fondo en modo claro */
   color: #1f1f1f;
 }
 
@@ -680,10 +663,8 @@ body.light-mode .container img {
 
 /* Nuevo estilo para el hover del botón en modo claro */
 form.light-mode button:hover {
-  background-color: #fff;
-  /* Color de fondo blanco */
-  color: #d4ba83;
-  /* Color del texto */
+  background-color: #fff; /* Color de fondo blanco */
+  color: #d4ba83; /* Color del texto */
 }
 
 /* Estilos predeterminados (modo oscuro) */
@@ -731,47 +712,36 @@ body.light-mode {
 body.light-mode div #barbaro {
   content: url("./Imagenes/LogoBárbaro.png");
 }
-
 body.light-mode div #bardo {
   content: url("./Imagenes/LogoBardo.png");
 }
-
 body.light-mode div #brujo {
   content: url("./Imagenes/LogoBrujo.png");
 }
-
 body.light-mode div #clerigo {
   content: url("./Imagenes/LogoClerigo.png");
 }
-
 body.light-mode div #druida {
   content: url("./Imagenes/LogoDruida.png");
 }
-
 body.light-mode div #explorador {
   content: url("./Imagenes/LogoExplorador.png");
 }
-
 body.light-mode div #guerrero {
   content: url("./Imagenes/LogoGuerrero.png");
 }
-
 body.light-mode div #hechicero {
   content: url("./Imagenes/LogoHechicero.png");
 }
-
 body.light-mode div #mago {
   content: url("./Imagenes/LogoMago.png");
 }
-
 body.light-mode div #monje {
   content: url("./Imagenes/LogoMonje.png");
 }
-
 body.light-mode div #paladin {
   content: url("./Imagenes/LogoPaladín.png");
 }
-
 body.light-mode div #picaro {
   content: url("./Imagenes/LogoPícaro.png");
 }
