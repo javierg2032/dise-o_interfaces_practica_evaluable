@@ -1,188 +1,197 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="lang" content="es" />
-    <meta name="author" content="Javier Galán" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="D&D, DND, Dungeons and Dragons, Rol" />
-    <title>Gremio D20</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  </head>
 
-  <body class="light-mode">
-    <header class="header">
-      <div class="logo-container">
-        <a href="index.html">
-          <img src="Imagenes/D20.svg" alt="Logo" class="logo" />
-        </a>
-        <h1 class="header-title">Gremio D20</h1>
-      </div>
-      <div class="user" id="user-toggle">
-        <a href="login.html">
-          <span class="material-symbols-outlined" id="user-icon"
-            >account_circle</span
-          >
-        </a>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="lang" content="es" />
+  <meta name="author" content="Javier Galán" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="D&D, DND, Dungeons and Dragons, Rol" />
+  <title>Gremio D20</title>
+  <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
 
-      <div class="mode" id="mode-toggle">
-        <span class="material-symbols-outlined" id="mode-icon">light_mode</span>
-      </div>
-    </header>
+<body class="light-mode">
+  <header class="header">
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="Imagenes/D20.svg" alt="Logo" class="logo" />
+      </a>
+      <h1 class="header-title">Gremio D20</h1>
+    </div>
+    <div class="user" id="user-toggle">
+      <a href="login.html">
+        <span class="material-symbols-outlined" id="user-icon">account_circle</span>
+      </a>
+    </div>
 
-    <section class="index-section">
-      <div class="container">
-        <a href="Bárbaro.html">
-          <div class="card-container">
-            <img src="Imagenes/Bárbaro.svg" alt="Bárbaro" />
-            <h2 class="hover-text" id="barbaroIndex">Bárbaro</h2>
-          </div>
-        </a>
-        <a href="Bardo.html">
-          <div class="card-container">
-            <img src="Imagenes/Bardo.svg" alt="Bardo" />
-            <h2 class="hover-text" id="bardoIndex">Bardo</h2>
-          </div>
-        </a>
-        <a href="Brujo.html">
-          <div class="card-container">
-            <img src="Imagenes/Brujo.svg" alt="Brujo" />
-            <h2 class="hover-text" id="brujoIndex">Brujo</h2>
-          </div>
-        </a>
-        <a href="Clérigo.html">
-          <div class="card-container">
-            <img src="Imagenes/Clérigo.svg" alt="Clérigo" />
-            <h2 class="hover-text" id="clerigoIndex">Clérigo</h2>
-          </div>
-        </a>
-      </div>
+    <div class="mode" id="mode-toggle">
+      <span class="material-symbols-outlined" id="mode-icon">light_mode</span>
+    </div>
+  </header>
 
-      <div class="container">
-        <a href="Druida.html">
-          <div class="card-container">
-            <img src="Imagenes/Druida.svg" alt="Druida" />
-            <h2 class="hover-text" id="druidaIndex">Druida</h2>
-          </div>
-        </a>
-        <a href="Explorador.html">
-          <div class="card-container">
-            <img src="Imagenes/Explorador.svg" alt="Explorador" />
-            <h2 class="hover-text" id="exploradorIndex">Explorador</h2>
-          </div>
-        </a>
-        <a href="Guerrero.html">
-          <div class="card-container">
-            <img src="Imagenes/Guerrero.svg" alt="Guerrero" />
-            <h2 class="hover-text" id="guerreroIndex">Guerrero</h2>
-          </div>
-        </a>
-        <a href="Hechicero.html">
-          <div class="card-container">
-            <img src="Imagenes/Hechicero.svg" alt="Hechicero" />
-            <h2 class="hover-text" id="hechiceroIndex">Hechicero</h2>
-          </div>
-        </a>
-      </div>
+  <section class="index-section">
+    <div class="container">
+      <a href="Bárbaro.html">
+        <div class="card-container">
+          <img src="Imagenes/Bárbaro.svg" alt="Bárbaro" id="imgBarbaro" />
+          <h2 class="hover-text" id="barbaroIndex">Bárbaro</h2>
+        </div>
+      </a>
+      <a href="Bardo.html">
+        <div class="card-container">
+          <img src="Imagenes/Bardo.svg" alt="Bardo" id="imgBardo" />
+          <h2 class="hover-text" id="bardoIndex">Bardo</h2>
+        </div>
+      </a>
+      <a href="Brujo.html">
+        <div class="card-container">
+          <img src="Imagenes/Brujo.svg" alt="Brujo" id="imgBrujo" />
+          <h2 class="hover-text" id="brujoIndex">Brujo</h2>
+        </div>
+      </a>
+      <a href="Clérigo.html">
+        <div class="card-container">
+          <img src="Imagenes/Clérigo.svg" alt="Clérigo" id="imgClerigo" />
+          <h2 class="hover-text" id="clerigoIndex">Clérigo</h2>
+        </div>
+      </a>
+    </div>
 
-      <div class="container">
-        <a href="Mago.html">
-          <div class="card-container">
-            <img src="Imagenes/Mago.svg" alt="Mago" />
-            <h2 class="hover-text" id="magoIndex">Mago</h2>
-          </div>
-        </a>
-        <a href="Monje.html">
-          <div class="card-container">
-            <img src="Imagenes/Monje.svg" alt="Monje" />
-            <h2 class="hover-text" id="monjeIndex">Monje</h2>
-          </div>
-        </a>
-        <a href="Paladín.html">
-          <div class="card-container">
-            <img src="Imagenes/Paladín.svg" alt="Paladín" />
-            <h2 class="hover-text" id="paladinIndex">Paladín</h2>
-          </div>
-        </a>
-        <a href="Pícaro.html">
-          <div class="card-container">
-            <img src="Imagenes/Pícaro.svg" alt="Pícaro" />
-            <h2 class="hover-text" id="picaroIndex">Pícaro</h2>
-          </div>
-        </a>
+    <div class="container">
+      <a href="Druida.html">
+        <div class="card-container">
+          <img src="Imagenes/Druida.svg" alt="Druida" id="imgDruida" />
+          <h2 class="hover-text" id="druidaIndex">Druida</h2>
+        </div>
+      </a>
+      <a href="Explorador.html">
+        <div class="card-container">
+          <img src="Imagenes/Explorador.svg" alt="Explorador" id="imgExplorador" />
+          <h2 class="hover-text" id="exploradorIndex">Explorador</h2>
+        </div>
+      </a>
+      <a href="Guerrero.html">
+        <div class="card-container">
+          <img src="Imagenes/Guerrero.svg" alt="Guerrero" id="imgGuerrero" />
+          <h2 class="hover-text" id="guerreroIndex">Guerrero</h2>
+        </div>
+      </a>
+      <a href="Hechicero.html">
+        <div class="card-container">
+          <img src="Imagenes/Hechicero.svg" alt="Hechicero" id="imgHechicero" />
+          <h2 class="hover-text" id="hechiceroIndex">Hechicero</h2>
+        </div>
+      </a>
+    </div>
 
-        <audio id="audioBardo" src="Audios/Bardo.mp3"></audio>
-        <audio id="audioBrujo" src="Audios/Brujo.mp3"></audio>
-        <audio id="audioBarbaro" src="Audios/Bárbaro.mp3"></audio>
-        <audio id="audioClerigo" src="Audios/Clérigo.mp3"></audio>
-        <audio id="audioDruida" src="Audios/Druida.mp3"></audio>
-        <audio id="audioExplorador" src="Audios/Explorador.mp3"></audio>
-        <audio id="audioGuerrero" src="Audios/Guerrero.mp3"></audio>
-        <audio id="audioHechicero" src="Audios/Hechicero.mp3"></audio>
-        <audio id="audioMago" src="Audios/Mago.mp3"></audio>
-        <audio id="audioMonje" src="Audios/Monje.mp3"></audio>
-        <audio id="audioPaladin" src="Audios/Paladín.mp3"></audio>
-        <audio id="audioPicaro" src="Audios/Pícaro.mp3"></audio>
-      </div>
-    </section>
-    <footer class="footer">
-      <div>
-        <p></p>
-      </div>
-    </footer>
+    <div class="container">
+      <a href="Mago.html">
+        <div class="card-container">
+          <img src="Imagenes/Mago.svg" alt="Mago" id="imgMago" />
+          <h2 class="hover-text" id="magoIndex">Mago</h2>
+        </div>
+      </a>
+      <a href="Monje.html">
+        <div class="card-container">
+          <img src="Imagenes/Monje.svg" alt="Monje" id="imgMonje" />
+          <h2 class="hover-text" id="monjeIndex">Monje</h2>
+        </div>
+      </a>
+      <a href="Paladín.html">
+        <div class="card-container">
+          <img src="Imagenes/Paladín.svg" alt="Paladín" id="imgPaladin" />
+          <h2 class="hover-text" id="paladinIndex">Paladín</h2>
+        </div>
+      </a>
+      <a href="Pícaro.html">
+        <div class="card-container">
+          <img src="Imagenes/Pícaro.svg" alt="Pícaro" id="imgPicaro" />
+          <h2 class="hover-text" id="picaroIndex">Pícaro</h2>
+        </div>
+      </a>
 
-    <script>
-      window.addEventListener("load", () => {
-        // Obtener el cuerpo y el icono del modo
-        const body = document.body;
-        const modeIcon = document.getElementById("mode-icon");
+      <audio id="audioBardo" src="Audios/Bardo.mp3"></audio>
+      <audio id="audioBrujo" src="Audios/Brujo.mp3"></audio>
+      <audio id="audioBarbaro" src="Audios/Bárbaro.mp3"></audio>
+      <audio id="audioClerigo" src="Audios/Clérigo.mp3"></audio>
+      <audio id="audioDruida" src="Audios/Druida.mp3"></audio>
+      <audio id="audioExplorador" src="Audios/Explorador.mp3"></audio>
+      <audio id="audioGuerrero" src="Audios/Guerrero.mp3"></audio>
+      <audio id="audioHechicero" src="Audios/Hechicero.mp3"></audio>
+      <audio id="audioMago" src="Audios/Mago.mp3"></audio>
+      <audio id="audioMonje" src="Audios/Monje.mp3"></audio>
+      <audio id="audioPaladin" src="Audios/Paladín.mp3"></audio>
+      <audio id="audioPicaro" src="Audios/Pícaro.mp3"></audio>
+    </div>
+  </section>
+  <footer class="footer">
+    <div>
+      <p></p>
+    </div>
+  </footer>
 
-        // Verificar el tema guardado en localStorage
-        const theme = localStorage.getItem("theme");
-        if (theme === "dark") {
-          body.classList.remove("light-mode"); // Eliminar modo claro
-          modeIcon.textContent = "dark_mode"; // Cambiar icono a modo oscuro
+  <script>
+    window.addEventListener("load", () => {
+      // Obtener el cuerpo y el icono del modo
+      const body = document.body;
+      const modeIcon = document.getElementById("mode-icon");
+
+      // Verificar el tema guardado en localStorage
+      const theme = localStorage.getItem("theme");
+      if (theme === "dark") {
+        body.classList.remove("light-mode"); // Eliminar modo claro
+        modeIcon.textContent = "dark_mode"; // Cambiar icono a modo oscuro
+      } else {
+        body.classList.add("light-mode"); // Asegurar modo claro
+        modeIcon.textContent = "light_mode"; // Icono de modo claro
+      }
+
+      // Alternar entre modos al hacer clic en el icono
+      document.querySelector(".mode").addEventListener("click", () => {
+        body.classList.toggle("light-mode"); // Alternar la clase de modo claro
+
+        // Cambiar el icono y el tema en localStorage
+        if (body.classList.contains("light-mode")) {
+          modeIcon.textContent = "light_mode"; // Modo claro
+          localStorage.setItem("theme", "light"); // Guardar tema claro
         } else {
-          body.classList.add("light-mode"); // Asegurar modo claro
-          modeIcon.textContent = "light_mode"; // Icono de modo claro
+          modeIcon.textContent = "dark_mode"; // Modo oscuro
+          localStorage.setItem("theme", "dark"); // Guardar tema oscuro
         }
-
-        // Alternar entre modos al hacer clic en el icono
-        document.querySelector(".mode").addEventListener("click", () => {
-          body.classList.toggle("light-mode"); // Alternar la clase de modo claro
-
-          // Cambiar el icono y el tema en localStorage
-          if (body.classList.contains("light-mode")) {
-            modeIcon.textContent = "light_mode"; // Modo claro
-            localStorage.setItem("theme", "light"); // Guardar tema claro
-          } else {
-            modeIcon.textContent = "dark_mode"; // Modo oscuro
-            localStorage.setItem("theme", "dark"); // Guardar tema oscuro
-          }
-          console.log("El tema actual es: " + localStorage.getItem("theme"));
-        });
+        console.log("El tema actual es: " + localStorage.getItem("theme"));
       });
+    });
 
-      $(document).ready(function () {
-        $(".card-container img").hover(function () {
+
+    $(document).ready(function () {
+      $(".card-container img").hover(
+        function () {
+
           const imagenHover = $(this).attr("id");
-          const audioHover = "#audio" + imagenHover.substring(2);
-          console.log(
-            "el valor de imagen y de audio es" + imagenHover + audioHover
-          );
-          $(audioHover)[0].play();
-        });
-      });
-    </script>
-  </body>
+          if (imagenHover) {
+            const audioHover = "#audio" + imagenHover.substring(3);
+            console.log("El valor de imagen y de audio es " + imagenHover + " " + audioHover);
+            $(audioHover)[0].play(); // Reproducir el audio
+          }
+        },
+        function () {
+
+          const imagenHover = $(this).attr("id");
+          if (imagenHover) {
+            const audioHover = "#audio" + imagenHover.substring(3);
+            $(audioHover)[0].pause(); // Pausar el audio
+            $(audioHover)[0].currentTime = 0; // Reiniciar el audio
+          }
+        }
+      );
+    });
+
+  </script>
+</body>
+
 </html>
