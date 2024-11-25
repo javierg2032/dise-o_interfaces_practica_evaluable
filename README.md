@@ -17,10 +17,9 @@
 
 ├── Imagenes/ # Carpeta con los recursos multimedia
 
-└── README.md # Este archivo
+├── Audios/ # Carpeta con los recursos de audio
 
-bash
-Copiar código
+└── README.md # Este archivo
 
 ## 📋 Requisitos previos
 
