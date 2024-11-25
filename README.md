@@ -12,8 +12,11 @@
 ## 📂 Estructura del proyecto
 
 ├── index.html # Página principal
+
 ├── styles.css # Archivo de estilos
+
 ├── Imagenes/ # Carpeta con los recursos multimedia
+
 └── README.md # Este archivo
 
 bash
@@ -27,7 +30,7 @@ Antes de empezar, asegúrate de tener un navegador moderno (como Chrome, Firefox
 
 1. Clona este repositorio en tu máquina local:
    ```bash
-   git clone https://github.com/javierg2032/diseno_interfaces_practica_evaluable.git
+   git clone https://github.com/javierg2032/proyecto_diseno_interfaces.git
 Accede a la rama del proyecto:
 bash
 Copiar código
