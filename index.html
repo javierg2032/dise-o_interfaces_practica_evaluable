@@ -43,26 +43,26 @@
       <div class="container">
         <a href="Bárbaro.html">
           <div class="card-container">
-            <img src="Imagenes/Bárbaro.svg" alt="Bárbaro">
-            <h2 class="hover-text">Bárbaro</h2>
+            <img src="Imagenes/Bárbaro.svg" alt="Bárbaro" />
+            <h2 class="hover-text" id="barbaroIndex">Bárbaro</h2>
           </div>
         </a>
         <a href="Bardo.html">
           <div class="card-container">
-            <img src="Imagenes/Bardo.svg" alt="Bardo"/>
-            <h2 class="hover-text">Bardo</h2>
+            <img src="Imagenes/Bardo.svg" alt="Bardo" />
+            <h2 class="hover-text" id="bardoIndex">Bardo</h2>
           </div>
         </a>
         <a href="Brujo.html">
           <div class="card-container">
             <img src="Imagenes/Brujo.svg" alt="Brujo" />
-            <h2 class="hover-text">Brujo</h2>
+            <h2 class="hover-text" id="brujoIndex">Brujo</h2>
           </div>
         </a>
         <a href="Clérigo.html">
           <div class="card-container">
             <img src="Imagenes/Clérigo.svg" alt="Clérigo" />
-            <h2 class="hover-text">Clérigo</h2>
+            <h2 class="hover-text" id="clerigoIndex">Clérigo</h2>
           </div>
         </a>
       </div>
@@ -70,26 +70,26 @@
       <div class="container">
         <a href="Druida.html">
           <div class="card-container">
-            <img src="Imagenes/Druida.svg" alt="Druida"/>
-            <h2 class="hover-text">Druida</h2>
+            <img src="Imagenes/Druida.svg" alt="Druida" />
+            <h2 class="hover-text" id="druidaIndex">Druida</h2>
           </div>
         </a>
         <a href="Explorador.html">
           <div class="card-container">
-            <img src="Imagenes/Explorador.svg" alt="Explorador"/>
-            <h2 class="hover-text">Explorador</h2>
+            <img src="Imagenes/Explorador.svg" alt="Explorador" />
+            <h2 class="hover-text" id="exploradorIndex">Explorador</h2>
           </div>
         </a>
         <a href="Guerrero.html">
           <div class="card-container">
-            <img src="Imagenes/Guerrero.svg" alt="Guerrero"/>
-            <h2 class="hover-text">Guerrero</h2>
+            <img src="Imagenes/Guerrero.svg" alt="Guerrero" />
+            <h2 class="hover-text" id="guerreroIndex">Guerrero</h2>
           </div>
         </a>
         <a href="Hechicero.html">
           <div class="card-container">
-            <img src="Imagenes/Hechicero.svg" alt="Hechicero"/>
-            <h2 class="hover-text">Hechicero</h2>
+            <img src="Imagenes/Hechicero.svg" alt="Hechicero" />
+            <h2 class="hover-text" id="hechiceroIndex">Hechicero</h2>
           </div>
         </a>
       </div>
@@ -97,28 +97,41 @@
       <div class="container">
         <a href="Mago.html">
           <div class="card-container">
-            <img src="Imagenes/Mago.svg" alt="Mago"/>
-            <h2 class="hover-text">Mago</h2>
+            <img src="Imagenes/Mago.svg" alt="Mago" />
+            <h2 class="hover-text" id="magoIndex">Mago</h2>
           </div>
         </a>
         <a href="Monje.html">
           <div class="card-container">
-            <img src="Imagenes/Monje.svg" alt="Monje"/> 
-            <h2 class="hover-text">Monje</h2>
+            <img src="Imagenes/Monje.svg" alt="Monje" />
+            <h2 class="hover-text" id="monjeIndex">Monje</h2>
           </div>
         </a>
         <a href="Paladín.html">
           <div class="card-container">
-            <img src="Imagenes/Paladín.svg" alt="Paladín"/>
-            <h2 class="hover-text">Paladín</h2>
+            <img src="Imagenes/Paladín.svg" alt="Paladín" />
+            <h2 class="hover-text" id="paladinIndex">Paladín</h2>
           </div>
         </a>
         <a href="Pícaro.html">
           <div class="card-container">
-            <img src="Imagenes/Pícaro.svg" alt="Pícaro"/>
-            <h2 class="hover-text">Pícaro</h2>
+            <img src="Imagenes/Pícaro.svg" alt="Pícaro" />
+            <h2 class="hover-text" id="picaroIndex">Pícaro</h2>
           </div>
         </a>
+
+        <audio id="audioBardo" src="Audios/Bardo.mp3"></audio>
+        <audio id="audioBrujo" src="Audios/Brujo.mp3"></audio>
+        <audio id="audioBarbaro" src="Audios/Bárbaro.mp3"></audio>
+        <audio id="audioClerigo" src="Audios/Clérigo.mp3"></audio>
+        <audio id="audioDruida" src="Audios/Druida.mp3"></audio>
+        <audio id="audioExplorador" src="Audios/Explorador.mp3"></audio>
+        <audio id="audioGuerrero" src="Audios/Guerrero.mp3"></audio>
+        <audio id="audioHechicero" src="Audios/Hechicero.mp3"></audio>
+        <audio id="audioMago" src="Audios/Mago.mp3"></audio>
+        <audio id="audioMonje" src="Audios/Monje.mp3"></audio>
+        <audio id="audioPaladin" src="Audios/Paladín.mp3"></audio>
+        <audio id="audioPicaro" src="Audios/Pícaro.mp3"></audio>
       </div>
     </section>
     <footer class="footer">
@@ -156,6 +169,17 @@
             localStorage.setItem("theme", "dark"); // Guardar tema oscuro
           }
           console.log("El tema actual es: " + localStorage.getItem("theme"));
+        });
+      });
+
+      $(document).ready(function () {
+        $(".card-container img").hover(function () {
+          const imagenHover = $(this).attr("id");
+          const audioHover = "#audio" + imagenHover.substring(2);
+          console.log(
+            "el valor de imagen y de audio es" + imagenHover + audioHover
+          );
+          $(audioHover)[0].play();
         });
       });
     </script>
