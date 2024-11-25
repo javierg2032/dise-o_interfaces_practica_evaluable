@@ -1,4 +1,4 @@
-# Diseño de Interfaces - Práctica Evaluable 🚀
+# Diseño de Interfaces - Proyecto 🚀
 
 ¡Bienvenido al repositorio de la práctica evaluable de **Diseño de Interfaces**! Aquí encontrarás un proyecto que implementa conceptos esenciales de HTML y CSS, siguiendo los requerimientos específicos de posicionamiento y clases. 
 
