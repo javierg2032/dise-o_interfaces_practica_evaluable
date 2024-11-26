@@ -37,7 +37,7 @@ body {
   vertical-align: middle;
   color: #e54341;
   margin-left: 10px;
-  font-size: 2em;
+  font-size: 3em;
   line-height: 50px;
 }
 
@@ -116,6 +116,7 @@ h3 {
 }
 
 a {
+  cursor: url("./Imagenes/D20Mouse.svg"), auto;
   color: #e54341;
 }
 
@@ -152,6 +153,8 @@ body.light-mode h3 {
 }
 
 body.light-mode a {
+  cursor: url("./Imagenes/D20MouseClaro.svg"), auto;
+
   color: #e54341;
 }
 
@@ -405,273 +408,51 @@ body.light-mode #filaPicaro {
 }
 
 .card-container {
-  display: relative;
+  position: relative;
   width: min-content;
+  text-align: center;
 }
 
 /*Hover Clases*/
 
-.hover-text#barbaroIndex {
-  color: #ffffff;
-  position: absolute;
-  padding-left: 1.25%;
-  padding-right: 1.25%;
-  opacity: 0;
-  scale: 0.8;
-  transform: translate(26%, -200%);
-  transition: ease-in-out 0.75s;
-}
-
-.index-section img:hover + .hover-text#barbaroIndex {
-  color: #ffffff;
-  padding-left: 1.25%;
-  padding-right: 1.25%;
-  opacity: 1;
-  scale: 1;
-  text-align: center;
-  transform: translate(26%, -100%);
-  filter: drop-shadow(4px 10px rgba(0, 0, 0, 0.4));
-}
-
-.hover-text#bardoIndex {
-  color: #ffffff;
-  position: absolute;
-  padding-left: 1.25%;
-  padding-right: 1.25%;
-  opacity: 0;
-  scale: 0.8;
-  transform: translate(60%, -200%);
-  transition: ease-in-out 0.75s;
-}
-
-.index-section img:hover + .hover-text#bardoIndex {
-  color: #ffffff;
-  padding-left: 1.25%;
-  padding-right: 1.25%;
-  opacity: 1;
-  scale: 1;
-  text-align: center;
-  transform: translate(50%, -100%);
-  filter: drop-shadow(4px 10px rgba(0, 0, 0, 0.4));
-}
-
-.hover-text#brujoIndex {
-  color: #ffffff;
-  position: absolute;
-  padding-left: 1.25%;
-  padding-right: 1.25%;
-  opacity: 0;
-  scale: 0.8;
-  transform: translate(65%, -200%);
-  transition: ease-in-out 0.75s;
-}
-
-.index-section img:hover + .hover-text#brujoIndex {
-  color: #ffffff;
-  padding-left: 1.25%;
-  padding-right: 1.25%;
-  opacity: 1;
-  scale: 1;
-  text-align: center;
-  transform: translate(55%, -100%);
-  filter: drop-shadow(4px 10px rgba(0, 0, 0, 0.4));
-}
-
-.hover-text#clerigoIndex {
-  color: #ffffff;
-  position: absolute;
-  padding-left: 1.25%;
-  padding-right: 1.25%;
-  opacity: 0;
-  scale: 0.8;
-  transform: translate(41%, -200%);
-  transition: ease-in-out 0.75s;
-}
-
-.index-section img:hover + .hover-text#clerigoIndex {
-  color: #ffffff;
-  padding-left: 1.25%;
-  padding-right: 1.25%;
-  opacity: 1;
-  scale: 1;
-  text-align: center;
-  transform: translate(34%, -100%);
-  filter: drop-shadow(4px 10px rgba(0, 0, 0, 0.4));
-}
-
-.hover-text#druidaIndex {
-  color: #ffffff;
-  position: absolute;
-  padding-left: 1.25%;
-  padding-right: 1.25%;
-  opacity: 0;
-  scale: 0.8;
-  transform: translate(41%, -200%);
-  transition: ease-in-out 0.75s;
-}
-
-.index-section img:hover + .hover-text#druidaIndex {
-  color: #ffffff;
-  padding-left: 1.25%;
-  padding-right: 1.25%;
-  opacity: 1;
-  scale: 1;
-  text-align: center;
-  transform: translate(34%, -100%);
-  filter: drop-shadow(4px 10px rgba(0, 0, 0, 0.4));
-}
-
-.hover-text#exploradorIndex {
-  color: #ffffff;
-  position: absolute;
-  padding-left: 1.25%;
-  padding-right: 1.25%;
-  opacity: 0;
-  scale: 0.8;
-  transform: translate(6.5%, -200%);
-  transition: ease-in-out 0.75s;
-}
-
-.index-section img:hover + .hover-text#exploradorIndex {
-  color: #ffffff;
-  padding-left: 1.25%;
-  padding-right: 1.25%;
-  opacity: 1;
-  scale: 1;
-  text-align: center;
-  transform: translate(6.5%, -100%);
-  filter: drop-shadow(4px 10px rgba(0, 0, 0, 0.4));
-}
-
-.hover-text#guerreroIndex {
-  color: #ffffff;
-  position: absolute;
-  padding-left: 1.25%;
-  padding-right: 1.25%;
-  opacity: 0;
-  scale: 0.8;
-  transform: translate(20%, -200%);
-  transition: ease-in-out 0.75s;
-}
-
-.index-section img:hover + .hover-text#guerreroIndex {
-  color: #ffffff;
-  padding-left: 1.25%;
-  padding-right: 1.25%;
-  opacity: 1;
-  scale: 1;
-  text-align: center;
-  transform: translate(17%, -100%);
-  filter: drop-shadow(4px 10px rgba(0, 0, 0, 0.4));
-}
-
-.hover-text#hechiceroIndex {
-  color: #ffffff;
-  position: absolute;
-  padding-left: 1.25%;
-  padding-right: 1.25%;
-  opacity: 0;
-  scale: 0.8;
-  transform: translate(15%, -200%);
-  transition: ease-in-out 0.75s;
-}
-
-.index-section img:hover + .hover-text#hechiceroIndex {
-  color: #ffffff;
-  padding-left: 1.25%;
-  padding-right: 1.25%;
-  opacity: 1;
-  scale: 1;
-  text-align: center;
-  transform: translate(14%, -100%);
-  filter: drop-shadow(4px 10px rgba(0, 0, 0, 0.4));
-}
-
-.hover-text#magoIndex {
-  color: #ffffff;
-  position: absolute;
-  padding-left: 1.25%;
-  padding-right: 1.25%;
-  opacity: 0;
-  scale: 0.8;
-  transform: translate(75%, -200%);
-  transition: ease-in-out 0.75s;
-}
-
-.index-section img:hover + .hover-text#magoIndex {
-  color: #ffffff;
-  padding-left: 1.25%;
-  padding-right: 1.25%;
-  opacity: 1;
-  scale: 1;
-  text-align: center;
-  transform: translate(61.2%, -100%);
-  filter: drop-shadow(4px 10px rgba(0, 0, 0, 0.4));
-}
-
-.hover-text#monjeIndex {
-  color: #ffffff;
-  position: absolute;
-  padding-left: 1.25%;
-  padding-right: 1.25%;
-  opacity: 0;
-  scale: 0.8;
-  transform: translate(55%, -200%);
-  transition: ease-in-out 0.75s;
-}
-
-.index-section img:hover + .hover-text#monjeIndex {
-  color: #ffffff;
-  padding-left: 1.25%;
-  padding-right: 1.25%;
-  opacity: 1;
-  scale: 1;
-  text-align: center;
-  transform: translate(45%, -100%);
-  filter: drop-shadow(4px 10px rgba(0, 0, 0, 0.4));
-}
-
-.hover-text#paladinIndex {
-  color: #ffffff;
-  position: absolute;
-  padding-left: 1.25%;
-  padding-right: 1.25%;
-  opacity: 0;
-  scale: 0.8;
-  transform: translate(37%, -200%);
-  transition: ease-in-out 0.75s;
-}
-
-.index-section img:hover + .hover-text#paladinIndex {
-  color: #ffffff;
-  padding-left: 1.25%;
-  padding-right: 1.25%;
-  opacity: 1;
-  scale: 1;
-  text-align: center;
-  transform: translate(30%, -100%);
-  filter: drop-shadow(4px 10px rgba(0, 0, 0, 0.4));
-}
-
+.hover-text#barbaroIndex,
+.hover-text#bardoIndex,
+.hover-text#brujoIndex,
+.hover-text#clerigoIndex,
+.hover-text#druidaIndex,
+.hover-text#exploradorIndex,
+.hover-text#guerreroIndex,
+.hover-text#hechiceroIndex,
+.hover-text#magoIndex,
+.hover-text#monjeIndex,
+.hover-text#paladinIndex,
 .hover-text#picaroIndex {
   color: #ffffff;
   position: absolute;
+  left: 50%;
+  transform: translateX(-60%) translateY(-200%); /* Alinea horizontalmente y ajusta la vertical */
   padding-left: 1.25%;
   padding-right: 1.25%;
   opacity: 0;
   scale: 0.8;
-  transform: translate(55%, -200%);
   transition: ease-in-out 0.75s;
 }
 
+.index-section img:hover + .hover-text#barbaroIndex,
+.index-section img:hover + .hover-text#bardoIndex,
+.index-section img:hover + .hover-text#brujoIndex,
+.index-section img:hover + .hover-text#clerigoIndex,
+.index-section img:hover + .hover-text#druidaIndex,
+.index-section img:hover + .hover-text#exploradorIndex,
+.index-section img:hover + .hover-text#guerreroIndex,
+.index-section img:hover + .hover-text#hechiceroIndex,
+.index-section img:hover + .hover-text#magoIndex,
+.index-section img:hover + .hover-text#monjeIndex,
+.index-section img:hover + .hover-text#paladinIndex,
 .index-section img:hover + .hover-text#picaroIndex {
-  color: #ffffff;
-  padding-left: 1.25%;
-  padding-right: 1.25%;
   opacity: 1;
   scale: 1;
-  text-align: center;
-  transform: translate(47%, -100%);
+  transform: translateX(-50%) translateY(-100%); /* Mantiene el centrado horizontal al hacer hover */
   filter: drop-shadow(4px 10px rgba(0, 0, 0, 0.4));
 }
 
