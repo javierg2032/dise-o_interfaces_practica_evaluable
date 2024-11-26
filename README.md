@@ -52,22 +52,3 @@ Este proyecto es parte de una práctica evaluable y tiene un propósito educativ
 
 📢 Ayúdanos a crecer
 Si te gusta este proyecto, ¡dale una estrella ⭐ para apoyar el trabajo y ayudar a otros a descubrirlo!
-
-markdown
-Copiar código
-
-### Mejoras sugeridas:
-1. **Capturas de pantalla/GIFs:**  
-   Sube imágenes de tu proyecto (pueden ser capturas completas o de secciones específicas) en la carpeta `Imagenes` y agrégalas al README.
-
-2. **Temas para visibilidad:**  
-   Añade etiquetas relevantes como `HTML`, `CSS`, `design`, `sticky-position`, y `educational-project` en la configuración del repositorio para que sea más fácil de encontrar.
-
-3. **Opciones de contribución:**  
-   Si planeas abrir este proyecto a la comunidad, considera agregar un archivo `CONTRIBUTING.md` explicando cómo colaborar.
-
-4. **Descripción en GitHub:**  
-   En la descripción corta del repositorio (arriba de la lista de archivos), escribe algo como:
-   > "Práctica evaluable de Diseño de Interfaces. Conceptos de HTML, CSS, y posicionamiento avanzado."
-
----
