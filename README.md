@@ -35,10 +35,9 @@ bash
 Copiar código
 git checkout posicionamiento-clases
 Abre el archivo index.html en tu navegador.
-🖼️ Capturas de pantalla
-(Agrega aquí una captura o GIF que muestre el diseño de tu página)
 
-🤝 Contribuciones
+
+## 🤝 Contribuciones
 ¡Las contribuciones son bienvenidas! Si tienes ideas para mejorar el diseño o el código:
 
 Haz un fork del repositorio.
@@ -47,8 +46,8 @@ bash
 Copiar código
 git checkout -b mi-nueva-funcionalidad
 Haz un pull request explicando tus mejoras.
-🪪 Licencia
+## © Licencia
 Este proyecto es parte de una práctica evaluable y tiene un propósito educativo. Si deseas reutilizarlo, da el crédito correspondiente.
 
-📢 Ayúdanos a crecer
+## 📢 Ayúdanos a crecer
 Si te gusta este proyecto, ¡dale una estrella ⭐ para apoyar el trabajo y ayudar a otros a descubrirlo!
