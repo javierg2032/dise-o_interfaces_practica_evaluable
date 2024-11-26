@@ -427,15 +427,15 @@ body.light-mode #filaPicaro {
 .hover-text#monjeIndex,
 .hover-text#paladinIndex,
 .hover-text#picaroIndex {
-  color: #ffffff;
   position: absolute;
   left: 50%;
-  transform: translateX(-60%) translateY(-200%); /* Alinea horizontalmente y ajusta la vertical */
-  padding-left: 1.25%;
-  padding-right: 1.25%;
+  transform: translateX(-50%) translateY(-200%); /* Alinea horizontalmente y ajusta la vertical */
+  padding-left: 5%;
+  padding-right: 5%;
   opacity: 0;
-  scale: 0.8;
+  scale: 0.7;
   transition: ease-in-out 0.75s;
+  border-radius: 50px;
 }
 
 .index-section img:hover + .hover-text#barbaroIndex,
@@ -451,9 +451,85 @@ body.light-mode #filaPicaro {
 .index-section img:hover + .hover-text#paladinIndex,
 .index-section img:hover + .hover-text#picaroIndex {
   opacity: 1;
-  scale: 1;
-  transform: translateX(-50%) translateY(-100%); /* Mantiene el centrado horizontal al hacer hover */
+  scale: 0.9;
+  transform: translateX(-53%) translateY(-100%); /* Mantiene el centrado horizontal al hacer hover */
   filter: drop-shadow(4px 10px rgba(0, 0, 0, 0.4));
+}
+
+.hover-text#barbaroIndex {
+  background-color: #d08f75;
+}
+
+.hover-text#bardoIndex {
+  background-color: #d69fd5;
+}
+.hover-text#brujoIndex {
+  background-color: #f2a3e4;
+}
+.hover-text#clerigoIndex {
+  background-color: #a7b8d9;
+}
+.hover-text#druidaIndex {
+  background-color: #a3c370;
+}
+.hover-text#exploradorIndex {
+  background-color: #6dbf56;
+}
+.hover-text#guerreroIndex {
+  background-color: #d68944;
+}
+.hover-text#hechiceroIndex {
+  background-color: #c78f5a;
+}
+.hover-text#magoIndex {
+  background-color: #5f94b6;
+}
+.hover-text#monjeIndex {
+  background-color: #3d7c96;
+}
+.hover-text#paladinIndex {
+  background-color: #d3b36a;
+}
+.hover-text#picaroIndex {
+  background-color: #7b8a97;
+}
+
+body.light-mode .hover-text#barbaroIndex {
+  background-color: #ea735b;
+}
+
+body.light-mode .hover-text#bardoIndex {
+  background-color: #e5a9e8;
+}
+body.light-mode .hover-text#brujoIndex {
+  background-color: #fe84f1;
+}
+body.light-mode .hover-text#clerigoIndex {
+  background-color: #9ebedf;
+}
+body.light-mode .hover-text#druidaIndex {
+  background-color: #bddb63;
+}
+body.light-mode .hover-text#exploradorIndex {
+  background-color: #84da71;
+}
+body.light-mode .hover-text#guerreroIndex {
+  background-color: #f4a058;
+}
+body.light-mode .hover-text#hechiceroIndex {
+  background-color: #e1a16d;
+}
+body.light-mode .hover-text#magoIndex {
+  background-color: #77b2e3;
+}
+body.light-mode .hover-text#monjeIndex {
+  background-color: #4f91b5;
+}
+body.light-mode .hover-text#paladinIndex {
+  background-color: #f0c97b;
+}
+body.light-mode .hover-text#picaroIndex {
+  background-color: #8d9fac;
 }
 
 .historia {
