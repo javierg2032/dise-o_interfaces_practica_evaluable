@@ -1,4 +1,332 @@
+/* Modo Claro */
+body.light-mode p {
+  font-size: larger;
+  color: #ffffff;
+}
+
+body.light-mode h1 {
+  font-family: "Jacques Francois", serif;
+  font-size: 3em;
+  margin: 0;
+  color: #ffffff;
+}
+
+body.light-mode h2 {
+  font-family: "Jacques Francois", serif;
+  font-size: 2.5em;
+  margin: 0;
+  color: #ffffff;
+}
+
+body.light-mode h3 {
+  font-family: "Jacques Francois", serif;
+  font-size: 1.75em;
+  margin: 0;
+  color: #d4ba83;
+  filter: brightness(0.6);
+}
+
+body.light-mode a {
+  cursor: url("./Imagenes/D20MouseClaro.svg"), auto;
+
+  color: #e54341;
+}
+
+body.light-mode p {
+  font-size: larger;
+  color: #ffffff;
+}
+
+body.light-mode ul li {
+  color: #ffffff;
+}
+
+body.light-mode ul li::marker {
+  color: #7d6e4d;
+}
+
+body.light-mode #filaBarbaro {
+  background-color: #ea735b;
+  border-color: #d35c43;
+  color: #1f1f1f;
+}
+body.light-mode #filaBardo {
+  background-color: #e5a9e8;
+  border-color: #c484c7;
+  color: #1f1f1f;
+}
+body.light-mode #filaBrujo {
+  background-color: #fe84f1;
+  border-color: #e87bdc;
+  color: #1f1f1f;
+}
+body.light-mode #filaClerigo {
+  background-color: #9ebedf;
+  border-color: #699acd;
+  color: #1f1f1f;
+}
+body.light-mode #filaDruida {
+  background-color: #bddb63;
+  border-color: #a3ca30;
+  color: #1f1f1f;
+}
+body.light-mode #filaExplorador {
+  background-color: #84da71;
+  border-color: #58ad45;
+  color: #1f1f1f;
+}
+body.light-mode #filaGeneral {
+  background-color: #fafafa;
+  border-color: #c5c5c5;
+  color: #1f1f1f;
+}
+body.light-mode #filaGuerrero {
+  background-color: #f4a058;
+  border-color: #cf7221;
+  color: #1f1f1f;
+}
+body.light-mode #filaHechicero {
+  background-color: #e1a16d;
+  border-color: #b46322;
+  color: #1f1f1f;
+}
+body.light-mode #filaMago {
+  background-color: #77b2e3;
+  border-color: #287fc7;
+  color: #1f1f1f;
+}
+body.light-mode #filaMonje {
+  background-color: #4f91b5;
+  border-color: #325f78;
+  color: #1f1f1f;
+}
+body.light-mode #filaPaladin {
+  background-color: #f0c97b;
+  border-color: #cb9747;
+  color: #1f1f1f;
+}
+body.light-mode #filaPicaro {
+  background-color: #8d9fac;
+  border-color: #606a73;
+  color: #1f1f1f;
+}
+
+body.light-mode .hover-text#barbaroIndex {
+  background-color: #ea735b;
+}
+
+body.light-mode .hover-text#bardoIndex {
+  background-color: #e5a9e8;
+}
+body.light-mode .hover-text#brujoIndex {
+  background-color: #fe84f1;
+}
+body.light-mode .hover-text#clerigoIndex {
+  background-color: #9ebedf;
+}
+body.light-mode .hover-text#druidaIndex {
+  background-color: #bddb63;
+}
+body.light-mode .hover-text#exploradorIndex {
+  background-color: #84da71;
+}
+body.light-mode .hover-text#guerreroIndex {
+  background-color: #f4a058;
+}
+body.light-mode .hover-text#hechiceroIndex {
+  background-color: #e1a16d;
+}
+body.light-mode .hover-text#magoIndex {
+  background-color: #77b2e3;
+}
+body.light-mode .hover-text#monjeIndex {
+  background-color: #4f91b5;
+}
+body.light-mode .hover-text#paladinIndex {
+  background-color: #f0c97b;
+}
+body.light-mode .hover-text#picaroIndex {
+  background-color: #8d9fac;
+}
+body.light-mode .index-section .container img {
+  width: 300px;
+  height: 450px;
+  object-fit: contain;
+  transition: transform 0.8s ease-in-out, clip-path 0.8s ease-in-out;
+  margin-bottom: 7.25px;
+  margin-top: 7.25px;
+  display: inline-block;
+  filter: drop-shadow(4px 10px rgba(0, 0, 0, 0.6));
+}
+
+body.light-mode .index-section img:hover {
+  clip-path: inset(0);
+  transform: scale(1.25);
+  filter: drop-shadow(4px 10px rgba(0, 0, 0, 0.4));
+}
+
+body.light-mode {
+  background-color: #f8f8f8;
+  color: #1f1f1f;
+}
+
+body.light-mode .header,
+body.light-mode .footer {
+  background-color: #f8f8f8;
+  color: #d4ba83;
+}
+
+body.light-mode .header-title {
+  color: #d4ba83;
+}
+
+body.light-mode form input {
+  font-size: 1.2em;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #1f1f1f;
+}
+
+body.light-mode form button {
+  background-color: #d4ba83;
+  color: #fff;
+}
+
+body.light-mode form button:hover {
+  background-color: #fff;
+  color: #d4ba83;
+}
+
+body.light-mode form p {
+  color: #ffffff;
+}
+
+body.light-mode form a {
+  filter: brightness(0.6);
+  color: #d4ba83;
+}
+
+body.light-mode form a:hover {
+  filter: brightness(1);
+  color: #ffffff;
+}
+
+body.light-mode .index-section {
+  background-color: #d4ba83;
+  color: #1f1f1f;
+}
+
+body.light-mode .class-section {
+  background-color: #d4ba83;
+  color: #1f1f1f;
+}
+
+body.light-mode form h2 {
+  font-size: 2.5em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+body.light-mode form label {
+  font-size: 1.2em;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 10px;
+}
+
+body.light-mode a {
+  color: #d4ba83;
+}
+
+body.light-mode #login-container,
+body.light-mode #register-container {
+  background-color: #d4ba83;
+  color: #1f1f1f;
+}
+
+body.light-mode .container img {
+  filter: drop-shadow(4px 10px rgba(0, 0, 0, 0.4));
+}
+
+form.light-mode button:hover {
+  background-color: #fff;
+  color: #d4ba83;
+}
+
+/* Colores del SVG en modo claro */
+body.light-mode #mode-icon {
+  stroke: #d4ba83;
+}
+
+/* Colores del SVG del usuario en modo claro */
+body.light-mode #user-icon svg {
+  stroke: #d4ba83;
+}
+
+body.light-mode a {
+  color: #d4ba83;
+}
+
+/* Cambio de logo y cursor en modo claro */
+body.light-mode a .logo {
+  content: url("./Imagenes/D20Claro.svg");
+}
+
+body.light-mode {
+  cursor: url("./Imagenes/D20MouseClaro.svg"), auto;
+}
+
+body.light-mode div #barbaro {
+  content: url("./Imagenes/LogoBárbaro.png");
+}
+body.light-mode div #bardo {
+  content: url("./Imagenes/LogoBardo.png");
+}
+body.light-mode div #brujo {
+  content: url("./Imagenes/LogoBrujo.png");
+}
+body.light-mode div #clerigo {
+  content: url("./Imagenes/LogoClerigo.png");
+}
+body.light-mode div #druida {
+  content: url("./Imagenes/LogoDruida.png");
+}
+body.light-mode div #explorador {
+  content: url("./Imagenes/LogoExplorador.png");
+}
+body.light-mode div #guerrero {
+  content: url("./Imagenes/LogoGuerrero.png");
+}
+body.light-mode div #hechicero {
+  content: url("./Imagenes/LogoHechicero.png");
+}
+body.light-mode div #mago {
+  content: url("./Imagenes/LogoMago.png");
+}
+body.light-mode div #monje {
+  content: url("./Imagenes/LogoMonje.png");
+}
+body.light-mode div #paladin {
+  content: url("./Imagenes/LogoPaladín.png");
+}
+body.light-mode div #picaro {
+  content: url("./Imagenes/LogoPícaro.png");
+}
+
+
+
 /* Estilos generales */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html,
 body {
   margin: 0;
@@ -12,12 +340,8 @@ body {
   font-family: "Jacques Francois", serif;
   font-size: larger;
   text-align: center;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+  color: #e54341;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .header {
@@ -125,44 +449,6 @@ p {
   color: #1f1f1f;
 }
 
-body.light-mode p {
-  font-size: larger;
-  color: #ffffff;
-}
-
-body.light-mode h1 {
-  font-family: "Jacques Francois", serif;
-  font-size: 3em;
-  margin: 0;
-  color: #ffffff;
-}
-
-body.light-mode h2 {
-  font-family: "Jacques Francois", serif;
-  font-size: 2.5em;
-  margin: 0;
-  color: #ffffff;
-}
-
-body.light-mode h3 {
-  font-family: "Jacques Francois", serif;
-  font-size: 1.75em;
-  margin: 0;
-  color: #d4ba83;
-  filter: brightness(0.6);
-}
-
-body.light-mode a {
-  cursor: url("./Imagenes/D20MouseClaro.svg"), auto;
-
-  color: #e54341;
-}
-
-body.light-mode p {
-  font-size: larger;
-  color: #ffffff;
-}
-
 table legend {
   color: #ffffff;
 }
@@ -192,14 +478,6 @@ ul li {
 
 ul li::marker {
   color: #420c0e;
-}
-
-body.light-mode ul li {
-  color: #ffffff;
-}
-
-body.light-mode ul li::marker {
-  color: #7d6e4d;
 }
 
 .index-section {
@@ -320,72 +598,6 @@ td {
   color: #ffffff;
 }
 
-body.light-mode #filaBarbaro {
-  background-color: #ea735b;
-  border-color: #d35c43;
-  color: #1f1f1f;
-}
-body.light-mode #filaBardo {
-  background-color: #e5a9e8;
-  border-color: #c484c7;
-  color: #1f1f1f;
-}
-body.light-mode #filaBrujo {
-  background-color: #fe84f1;
-  border-color: #e87bdc;
-  color: #1f1f1f;
-}
-body.light-mode #filaClerigo {
-  background-color: #9ebedf;
-  border-color: #699acd;
-  color: #1f1f1f;
-}
-body.light-mode #filaDruida {
-  background-color: #bddb63;
-  border-color: #a3ca30;
-  color: #1f1f1f;
-}
-body.light-mode #filaExplorador {
-  background-color: #84da71;
-  border-color: #58ad45;
-  color: #1f1f1f;
-}
-body.light-mode #filaGeneral {
-  background-color: #fafafa;
-  border-color: #c5c5c5;
-  color: #1f1f1f;
-}
-body.light-mode #filaGuerrero {
-  background-color: #f4a058;
-  border-color: #cf7221;
-  color: #1f1f1f;
-}
-body.light-mode #filaHechicero {
-  background-color: #e1a16d;
-  border-color: #b46322;
-  color: #1f1f1f;
-}
-body.light-mode #filaMago {
-  background-color: #77b2e3;
-  border-color: #287fc7;
-  color: #1f1f1f;
-}
-body.light-mode #filaMonje {
-  background-color: #4f91b5;
-  border-color: #325f78;
-  color: #1f1f1f;
-}
-body.light-mode #filaPaladin {
-  background-color: #f0c97b;
-  border-color: #cb9747;
-  color: #1f1f1f;
-}
-body.light-mode #filaPicaro {
-  background-color: #8d9fac;
-  border-color: #606a73;
-  color: #1f1f1f;
-}
-
 .container {
   text-align: center;
   width: 100%;
@@ -414,7 +626,6 @@ body.light-mode #filaPicaro {
 }
 
 /*Hover Clases*/
-
 .hover-text#barbaroIndex,
 .hover-text#bardoIndex,
 .hover-text#brujoIndex,
@@ -494,44 +705,6 @@ body.light-mode #filaPicaro {
   background-color: #7b8a97;
 }
 
-body.light-mode .hover-text#barbaroIndex {
-  background-color: #ea735b;
-}
-
-body.light-mode .hover-text#bardoIndex {
-  background-color: #e5a9e8;
-}
-body.light-mode .hover-text#brujoIndex {
-  background-color: #fe84f1;
-}
-body.light-mode .hover-text#clerigoIndex {
-  background-color: #9ebedf;
-}
-body.light-mode .hover-text#druidaIndex {
-  background-color: #bddb63;
-}
-body.light-mode .hover-text#exploradorIndex {
-  background-color: #84da71;
-}
-body.light-mode .hover-text#guerreroIndex {
-  background-color: #f4a058;
-}
-body.light-mode .hover-text#hechiceroIndex {
-  background-color: #e1a16d;
-}
-body.light-mode .hover-text#magoIndex {
-  background-color: #77b2e3;
-}
-body.light-mode .hover-text#monjeIndex {
-  background-color: #4f91b5;
-}
-body.light-mode .hover-text#paladinIndex {
-  background-color: #f0c97b;
-}
-body.light-mode .hover-text#picaroIndex {
-  background-color: #8d9fac;
-}
-
 .historia {
   width: 55%;
   font-size: larger;
@@ -565,23 +738,6 @@ body.light-mode .hover-text#picaroIndex {
   filter: drop-shadow(4px 10px rgba(0, 0, 0, 0.4));
 }
 
-body.light-mode .index-section .container img {
-  width: 300px;
-  height: 450px;
-  object-fit: contain;
-  transition: transform 0.8s ease-in-out, clip-path 0.8s ease-in-out;
-  margin-bottom: 7.25px;
-  margin-top: 7.25px;
-  display: inline-block;
-  filter: drop-shadow(4px 10px rgba(0, 0, 0, 0.6));
-}
-
-body.light-mode .index-section img:hover {
-  clip-path: inset(0);
-  transform: scale(1.25);
-  filter: drop-shadow(4px 10px rgba(0, 0, 0, 0.4));
-}
-
 .footer {
   text-align: center;
   background-color: #1f1f1f;
@@ -595,7 +751,7 @@ body.light-mode .index-section img:hover {
 /* Estilos para los formularios */
 #login-container,
 #register-container {
-  background-color: #e54341; /* Color por defecto en modo oscuro */
+  background-color: #e54341; 
   padding: 40px;
   margin: 10px auto;
   border-radius: 10px;
@@ -682,106 +838,6 @@ form a:hover {
 }
 
 /* Estilos para el modo claro */
-body.light-mode {
-  background-color: #f8f8f8;
-  color: #1f1f1f;
-}
-
-body.light-mode .header,
-body.light-mode .footer {
-  background-color: #f8f8f8;
-  color: #d4ba83;
-}
-
-body.light-mode .header-title {
-  color: #d4ba83;
-}
-
-body.light-mode form input {
-  font-size: 1.2em;
-  padding: 10px;
-  width: 100%;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #ffffff;
-  color: #1f1f1f;
-}
-
-body.light-mode form button {
-  background-color: #d4ba83;
-  color: #fff;
-}
-
-body.light-mode form button:hover {
-  background-color: #fff;
-  color: #d4ba83;
-}
-
-body.light-mode form p {
-  color: #ffffff;
-}
-
-body.light-mode form a {
-  filter: brightness(0.6);
-  color: #d4ba83;
-}
-
-body.light-mode form a:hover {
-  filter: brightness(1);
-  color: #ffffff;
-}
-
-body.light-mode .index-section {
-  background-color: #d4ba83; /* Color de fondo en modo claro para la sección del index */
-  color: #1f1f1f;
-}
-
-body.light-mode .class-section {
-  background-color: #d4ba83; /* Color de fondo en modo claro para la sección del index */
-  color: #1f1f1f;
-}
-
-body.light-mode form h2 {
-  font-size: 2.5em;
-  color: #ffffff;
-  margin-bottom: 20px;
-}
-
-body.light-mode form label {
-  font-size: 1.2em;
-  color: #ffffff;
-  display: block;
-  margin-bottom: 10px;
-}
-
-body.light-mode a {
-  color: #d4ba83;
-}
-
-/* Establecer color de fondo de los formularios en modo claro */
-body.light-mode #login-container,
-body.light-mode #register-container {
-  background-color: #d4ba83; /* Color de fondo en modo claro */
-  color: #1f1f1f;
-}
-
-body.light-mode .container img {
-  filter: drop-shadow(4px 10px rgba(0, 0, 0, 0.4));
-}
-
-/* Nuevo estilo para el hover del botón en modo claro */
-form.light-mode button:hover {
-  background-color: #fff; /* Color de fondo blanco */
-  color: #d4ba83; /* Color del texto */
-}
-
-/* Estilos predeterminados (modo oscuro) */
-body {
-  background-color: #1f1f1f;
-  color: #e54341;
-  transition: background-color 0.3s, color 0.3s;
-}
 
 /* Colores del SVG en modo oscuro */
 #mode-icon {
@@ -789,68 +845,8 @@ body {
   transition: stroke 0.3s;
 }
 
-/* Colores del SVG en modo claro */
-body.light-mode #mode-icon {
-  stroke: #d4ba83;
-}
-
 /* Colores del SVG del usuario en modo oscuro */
 #user-icon svg {
   stroke: #e54341;
   transition: stroke 0.3s;
-}
-
-/* Colores del SVG del usuario en modo claro */
-body.light-mode #user-icon svg {
-  stroke: #d4ba83;
-}
-
-body.light-mode a {
-  color: #d4ba83;
-}
-
-/* Cambio de logo y cursor en modo claro */
-body.light-mode a .logo {
-  content: url("./Imagenes/D20Claro.svg");
-}
-
-body.light-mode {
-  cursor: url("./Imagenes/D20MouseClaro.svg"), auto;
-}
-
-body.light-mode div #barbaro {
-  content: url("./Imagenes/LogoBárbaro.png");
-}
-body.light-mode div #bardo {
-  content: url("./Imagenes/LogoBardo.png");
-}
-body.light-mode div #brujo {
-  content: url("./Imagenes/LogoBrujo.png");
-}
-body.light-mode div #clerigo {
-  content: url("./Imagenes/LogoClerigo.png");
-}
-body.light-mode div #druida {
-  content: url("./Imagenes/LogoDruida.png");
-}
-body.light-mode div #explorador {
-  content: url("./Imagenes/LogoExplorador.png");
-}
-body.light-mode div #guerrero {
-  content: url("./Imagenes/LogoGuerrero.png");
-}
-body.light-mode div #hechicero {
-  content: url("./Imagenes/LogoHechicero.png");
-}
-body.light-mode div #mago {
-  content: url("./Imagenes/LogoMago.png");
-}
-body.light-mode div #monje {
-  content: url("./Imagenes/LogoMonje.png");
-}
-body.light-mode div #paladin {
-  content: url("./Imagenes/LogoPaladín.png");
-}
-body.light-mode div #picaro {
-  content: url("./Imagenes/LogoPícaro.png");
 }
